@@ -1,0 +1,191 @@
+.Activi {
+    min-height: 100vh;
+    padding: 2rem 15%;
+}
+
+/* .Activi h1{
+    text-align: center;
+    justify-content: center;
+} */
+
+
+
+/* .project-box {
+    display: grid;
+    grid-template-columns: repeat
+    (auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+} */
+
+.pf-section {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.pf-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pf-description {
+  font-size: 1rem;
+  color: #8b7f7f;
+  margin-bottom: 30px;
+}
+
+.pf-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pf-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.pf-card:hover {
+  transform: translateY(-5px);
+}
+
+.pf-img {
+  display: block;
+  max-width: calc(100% - 20px); /* เล็กกว่าการ์ด 10px ซ้าย + 10px ขวา */
+  max-height: 200px;            /* กำหนด max height ของรูป */
+  object-fit: contain;          /* ย่อรูปให้พอดีกล่อง (ไม่ครอป ไม่บิดเบี้ยว) */
+  margin: 10px auto 0;          /* เว้นระยะด้านบนและจัดกึ่งกลาง */
+  border-radius: 8px;           /* มุมโค้งเล็กน้อย (optional) */
+}
+
+
+.pf-card-title {
+  margin: 15px 20px 5px;
+  font-size: 1.2rem;
+}
+
+.pf-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0 20px 10px;
+}
+
+.pf-short {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0 20px 15px;
+}
+
+.pf-btn {
+  display: block;
+  margin: 0 20px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pf-btn:hover {
+  background: #0056b3;
+}
+
+/* 🔹 Modal */
+.pf-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pf-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+.pf-modal-img {
+  display: block;
+  max-width: calc(100% - 20px); /* padding ซ้ายขวา 10px */
+  max-height: 300px;            /* กำหนดสูงสุดของรูปใน modal */
+  object-fit: contain;          /* ย่อให้พอดี ไม่ครอป */
+  margin: 10px auto;            /* เว้นระยะรอบ ๆ และจัดกึ่งกลาง */
+  border-radius: 8px;
+}
+
+
+.pf-modal-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.pf-close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-list li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-list li a.active,
+.project-list li a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .pf-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .pf-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

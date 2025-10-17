@@ -1,0 +1,142 @@
+.Info {
+  min-height: 100vh;
+  padding: 2rem 15%;
+}
+
+
+.InfoImg {
+  width: 32vw;
+}
+
+.text-center img {
+  width: 32vw;
+  border-radius: 20%;
+  box-shadow: 0 0 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.con {
+  width: 80%;
+  padding: 30px;
+  margin: 20px;
+}
+
+.my-focus {
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  border: solid 4px black;
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.my-profile {
+  width: 32vw;
+  border-radius: 20%;
+  box-shadow: 0 0 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.CO {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  min-height: 20vh;
+  padding: 2rem 15%;
+}
+
+.a-l {
+  text-decoration: none;
+}
+
+/* .Skills {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 10rem;
+    padding-bottom: px;
+    padding-top: 0px;
+    text-align: center;
+} */
+.large-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid black;
+  order: -1;
+  /* ให้อยู่บนสุดบนหน้าจอเล็ก */
+}
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.square.red {
+  background-color: #e81c1c;
+}
+
+.square.orange {
+  background-color: #ff7f2a;
+}
+
+.circle,
+.oval {
+  display: block;
+  border: 3px solid black;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e81c1c;
+}
+
+.oval {
+  width: 130px;
+  height: 100px;
+  border-radius: 50% / 40%;
+  background-color: #ff7f2a;
+}
+
+@media (max-width: 1250px) {
+  .CO {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pair {
+    flex-direction: column;
+  }
+}
+
+/* mine */
+.eas {
+  width: 100%;
+  height: 100%;
+  align-items: row;
+  flex-wrap: wrap;
+  border: 0px;
+}

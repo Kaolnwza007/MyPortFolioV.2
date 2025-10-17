@@ -1,0 +1,54 @@
+@media(max-width:1285px){
+    /* Home Section */
+.home{
+    flex-direction: column-reverse;
+    margin: 0rem 0;
+    gap: 5rem;
+}
+.home-content{
+    align-items: center;
+    text-align: center;
+}
+.home-content h1{
+    font-size: 4rem;
+}
+.home-content h3{
+    font-size: 2rem;
+}
+.home-img img{
+    width: 56vw;
+}
+.about{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.about h2{
+    text-align: center;
+    margin: 2rem 0;
+}
+.about img{
+    width: 52vw;
+}
+/* About Section */
+
+/* Info Section */
+
+.Info {
+    flex-direction: column;
+    margin: 5rem 0;
+    gap: 5rem;
+}
+.Info-content {
+    align-items: center;
+    text-align: start;
+}
+.Info-img img{
+    width: 56vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skills {
+    flex-direction: column;
+} 
+}
