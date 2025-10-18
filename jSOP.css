@@ -31,18 +31,19 @@ section .title span::before,
 section .title span::after{
 content: "";
 position: absolute;
-height: 3px;
+height: 4px;
 width: 100%;
-background: #b74b4b;
+background: #dadd2c;
 left: 0;
 bottom: 0;
+top: 5;
 }
-section .title  span::after{
+/* section .title  span::after{
     bottom: -7px;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .about-details .right{
     width: 100%;
@@ -57,6 +58,6 @@ section .topic{
 
 .about-details .right p{
     text-align: justify;
-    color: rgb(199, 142, 142);
+    color: rgb(0, 0, 0);
 }
 
